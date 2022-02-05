@@ -10,10 +10,6 @@ const currScore2El = document.querySelector('#current--1')
 const player0El = document.querySelector('.player--0');
 const player1El = document.querySelector('.player--1');
 let scores, currScore, activePlayer, playing;
-// initial values
-// score0El.textContent = 0;
-// score1El.textContent = 0;
-// diceEl.classList.add('hidden');
 
 // add event listeners to buttons
 btnHold.addEventListener('click', function(){
@@ -35,55 +31,6 @@ btnHold.addEventListener('click', function(){
             switchPlayer()
     }
 })
-// function x(){
-//     if(turn){
-//         const diceNumberGenerated = Math.floor(Math.random() * 6) + 1
-//         console.log("clicked rolled", diceNumberGenerated);
-//         diceEl.src = `images/dice-${diceNumberGenerated}.png`;
-//         diceEl.classList.remove('hidden');
-//         if(diceNumberGenerated !== 1){
-//             // add dice generated to current score
-//             currScore1 += diceNumberGenerated;
-//             currScore1El.textContent = currScore1;
-//         }
-//         else{
-//             turn = false;
-//             const diceNumberGenerated = Math.floor(Math.random() * 6) + 1
-//             console.log("clicked rolled", diceNumberGenerated);
-//             diceEl.src = `images/dice-${diceNumberGenerated}.png`;
-//             diceEl.classList.remove('hidden');
-//             if(diceNumberGenerated !== 1){
-//                 // add dice generated to current score
-//                 currScore2 += diceNumberGenerated;
-//                 currScore2El.textContent = currScore2;
-//             }
-//         }
-//     }
-//     else{
-//         const diceNumberGenerated = Math.floor(Math.random() * 6) + 1
-//         console.log("clicked rolled", diceNumberGenerated);
-//         diceEl.src = `images/dice-${diceNumberGenerated}.png`;
-//         diceEl.classList.remove('hidden');
-//         if(diceNumberGenerated !== 1){
-//             // add dice generated to current score
-//             currScore2 += diceNumberGenerated;
-//             currScore2El.textContent = currScore2;
-//         }
-//         else{
-//             turn = true;
-//             const diceNumberGenerated = Math.floor(Math.random() * 6) + 1
-//             console.log("clicked rolled", diceNumberGenerated);
-//             diceEl.src = `images/dice-${diceNumberGenerated}.png`;
-//             diceEl.classList.remove('hidden');
-//             if(diceNumberGenerated !== 1){
-//                 // add dice generated to current score
-//                 currScore1 += diceNumberGenerated;
-//                 currScore1El.textContent = currScore1;
-//             }
-//         }
-//     }
-// }
-// init function
 const init = function(){
     scores = [0, 0];
     currScore = 0;
